@@ -10,6 +10,11 @@
     "declaration": true,
     "composite": true,
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@aigrading/schemas": ["packages/schemas/src/index"],
+      "@aigrading/grading": ["packages/grading/src/index"]
+    }
   }
 }
