@@ -1,0 +1,11 @@
+node_modules/
+.pnpm-store/
+dist/
+coverage/
+.turbo/
+.env
+.env.*
+datasets/private/
+docs/reports/*.html
+docs/reports/*.pdf
+experiments/runs/*.json

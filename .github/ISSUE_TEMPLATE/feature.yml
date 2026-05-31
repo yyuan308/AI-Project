@@ -1,0 +1,33 @@
+name: Feature
+description: Track one clear project deliverable
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should this issue accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this issue?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How do we know this is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Test Notes
+      description: Which commands or checks should pass?
+    validations:
+      required: true
