@@ -1,0 +1,41 @@
+{
+  "id": "sample-mixed-basic",
+  "name": "Mixed Basic Sample",
+  "version": "0.1.0",
+  "sourceType": "sample",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "objective",
+      "subject": "history",
+      "text": "Which dynasty built the Grand Canal?",
+      "maxScore": 2,
+      "options": ["Qin", "Sui", "Tang", "Song"],
+      "correctAnswer": "Sui"
+    },
+    {
+      "id": "q2",
+      "type": "short_answer",
+      "subject": "history",
+      "text": "Explain one reason the Grand Canal mattered.",
+      "maxScore": 4,
+      "referenceAnswer": "It connected north and south China and improved transport of grain and goods.",
+      "rubric": {
+        "fullScore": 4,
+        "scoringPoints": [
+          { "id": "p1", "description": "Mentions north-south connection", "points": 2 },
+          { "id": "p2", "description": "Mentions transport or economic value", "points": 2 }
+        ],
+        "deductionPoints": [],
+        "acceptedExpressions": ["linked regions", "moved grain", "transported goods"],
+        "notes": "Award partial credit for either connection or transport value."
+      }
+    }
+  ],
+  "answers": [
+    { "id": "a1", "questionId": "q1", "sourceType": "simulated", "text": "Sui", "humanScore": 2 },
+    { "id": "a2", "questionId": "q1", "sourceType": "simulated", "text": "Tang", "humanScore": 0 },
+    { "id": "a3", "questionId": "q2", "sourceType": "simulated", "text": "It linked different regions and helped move grain.", "humanScore": 4 },
+    { "id": "a4", "questionId": "q2", "sourceType": "simulated", "text": "It was beautiful and famous.", "humanScore": 0 }
+  ]
+}
