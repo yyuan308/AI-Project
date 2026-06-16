@@ -7,7 +7,7 @@
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck",
-    "benchmark:sample": "pnpm --filter @aigrading/cli benchmark -- --dataset datasets/samples/mixed-basic.json --out docs/reports/v0.1-sample-report.md"
+    "benchmark:sample": "pnpm --filter @aigrading/cli benchmark --dataset ../../datasets/samples/mixed-basic.json --out ../../docs/reports/v0.1-sample-report.md"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
