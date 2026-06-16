@@ -14,7 +14,9 @@
     "baseUrl": ".",
     "paths": {
       "@aigrading/schemas": ["packages/schemas/src/index"],
-      "@aigrading/grading": ["packages/grading/src/index"]
+      "@aigrading/grading": ["packages/grading/src/index"],
+      "@aigrading/evaluation": ["packages/evaluation/src/index"],
+      "@aigrading/report": ["packages/report/src/index"]
     }
   }
 }
