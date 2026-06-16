@@ -159,7 +159,7 @@ pnpm.cmd build
 
 ### Task 6: End-to-End CLI Benchmark Runner
 
-Status: completed on local branch; PR should be opened and merged next
+Status: merged to `main`
 
 Branch:
 
@@ -191,21 +191,41 @@ pnpm.cmd typecheck
 pnpm.cmd build
 ```
 
+### Task 7: Training Notes
+
+Status: completed on local branch; PR should be opened and merged next
+
+Branch:
+
+- `feature/training-notes_task7`
+
+Key output:
+
+- Agentic coding and GitHub workflow training notes.
+- Branch naming convention.
+- PR self-review checklist.
+- Common verification commands.
+
+Important files:
+
+- `docs/training/agentic-coding-github-workflow.md`
+
 ## Next Task
 
 Next planned task:
 
-- Task 7: Training Notes
+- Task 8: Final Verification for v0.1 Loop
 
-Start only after Task 6 is merged into `main`.
+Start only after Task 7 is merged into `main`.
 
 Expected branch:
 
-- `feature/training-notes_task7`
+- `feature/final-verification_task8`
 
 Expected output:
 
-- `docs/training/agentic-coding-github-workflow.md`
+- Full test, typecheck, build, and sample benchmark verification.
+- Local tag `v0.1-benchmark-loop` after review.
 
 ## Local Environment Notes
 
