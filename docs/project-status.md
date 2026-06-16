@@ -1,6 +1,6 @@
 # AI Grading Benchmark Project Status
 
-Last updated: 2026-05-31
+Last updated: 2026-06-16
 
 ## Current State
 
@@ -31,7 +31,7 @@ Status: merged to `main`
 
 Branch:
 
-- `feature/workspace-foundation`
+- `feature/workspace-foundation_task1`
 
 Key output:
 
@@ -49,7 +49,7 @@ Status: merged to `main`
 
 Branch:
 
-- `feature/dataset-schemas`
+- `feature/dataset-schemas_task2`
 
 Key output:
 
@@ -69,7 +69,7 @@ Status: merged to `main`
 
 Branch:
 
-- `feature/grading-package`
+- `feature/grading-package_task3`
 
 Key output:
 
@@ -85,11 +85,11 @@ Important files:
 
 ### Task 4: Evaluation Metrics Package
 
-Status: branch pushed; PR should be merged next if review is complete
+Status: merged to `main`
 
 Branch:
 
-- `feature/evaluation-metrics`
+- `feature/evaluation-metrics_task4`
 
 Latest task commit:
 
@@ -126,24 +126,86 @@ pnpm.cmd test
 pnpm.cmd typecheck
 ```
 
+### Task 5: Markdown Report Package
+
+Status: merged to `main`
+
+Branch:
+
+- `feature/markdown-report_task5`
+
+Key output:
+
+- `packages/report`
+- `renderMarkdownReport()` Markdown report renderer.
+- `docs/reports/.gitkeep`
+
+Important files:
+
+- `packages/report/src/markdown.ts`
+- `packages/report/src/markdown.test.ts`
+- `packages/report/src/index.ts`
+
+Verification passed:
+
+```powershell
+pnpm.cmd --filter @aigrading/report test
+pnpm.cmd --filter @aigrading/report typecheck
+pnpm.cmd --filter @aigrading/report build
+pnpm.cmd test
+pnpm.cmd typecheck
+pnpm.cmd build
+```
+
+### Task 6: End-to-End CLI Benchmark Runner
+
+Status: completed on local branch; PR should be opened and merged next
+
+Branch:
+
+- `feature/cli-benchmark-runner_task6`
+
+Key output:
+
+- `apps/cli`
+- `runBenchmark()` end-to-end runner.
+- `pnpm.cmd benchmark:sample` sample benchmark command.
+- `docs/reports/v0.1-sample-report.md`
+
+Important files:
+
+- `apps/cli/src/run-benchmark.ts`
+- `apps/cli/src/run-benchmark.test.ts`
+- `apps/cli/package.json`
+- `docs/reports/v0.1-sample-report.md`
+
+Verification passed:
+
+```powershell
+pnpm.cmd --filter @aigrading/cli test
+pnpm.cmd --filter @aigrading/cli typecheck
+pnpm.cmd --filter @aigrading/cli build
+pnpm.cmd benchmark:sample
+pnpm.cmd test
+pnpm.cmd typecheck
+pnpm.cmd build
+```
+
 ## Next Task
 
 Next planned task:
 
-- Task 5: Markdown Report Package
+- Task 7: Training Notes
 
-Start only after Task 4 is merged into `main`.
+Start only after Task 6 is merged into `main`.
 
 Expected branch:
 
-- `feature/markdown-report`
+- `feature/training-notes_task7`
 
 Expected output:
 
-- `packages/report`
-- Markdown benchmark report renderer.
-- Report tests.
-- `docs/reports/.gitkeep`
+- `docs/training/agentic-coding-github-workflow.md`
 
 ## Local Environment Notes
 
