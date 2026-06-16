@@ -193,7 +193,7 @@ pnpm.cmd build
 
 ### Task 7: Training Notes
 
-Status: completed on local branch; PR should be opened and merged next
+Status: merged to `main`
 
 Branch:
 
@@ -210,22 +210,39 @@ Important files:
 
 - `docs/training/agentic-coding-github-workflow.md`
 
+### Task 8: Final Verification for v0.1 Loop
+
+Status: completed on local branch; PR should be opened and merged next
+
+Branch:
+
+- `feature/final-verification_task8`
+
+Key output:
+
+- Full test, typecheck, build, and sample benchmark verification.
+- Verification record.
+
+Important files:
+
+- `docs/reports/v0.1-verification.md`
+- `docs/reports/v0.1-sample-report.md`
+
+Verification passed:
+
+```powershell
+pnpm.cmd test
+pnpm.cmd typecheck
+pnpm.cmd build
+pnpm.cmd benchmark:sample
+```
+
 ## Next Task
 
 Next planned task:
 
-- Task 8: Final Verification for v0.1 Loop
-
-Start only after Task 7 is merged into `main`.
-
-Expected branch:
-
-- `feature/final-verification_task8`
-
-Expected output:
-
-- Full test, typecheck, build, and sample benchmark verification.
-- Local tag `v0.1-benchmark-loop` after review.
+- Merge Task 8 into `main`.
+- Create milestone tag `v0.1-benchmark-loop` on `main`.
 
 ## Local Environment Notes
 
